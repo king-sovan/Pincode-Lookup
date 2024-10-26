@@ -35,7 +35,9 @@ const ResultPage = () => {
     <div className='results-page'>
         <h2>Pincode: {pincode}</h2>
         {loading ? (
-            <Rings color="#000" height={80} width={80}/>
+            <div className="loader-container">
+                <Rings color="#000" height={100} width={100} />
+            </div>
         ) : error ? (
             <p>{error}</p>
         ) : (
