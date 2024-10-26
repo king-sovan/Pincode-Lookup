@@ -1,4 +1,5 @@
 {
+  "homepage": "https://king-sovan.github.io/Pincode-Lookup",
   "name": "pinlookup",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+
+
   },
   "dependencies": {
     "axios": "^1.7.7",
@@ -25,6 +33,7 @@
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.13",
+    "gh-pages": "^6.2.0",
     "globals": "^15.11.0",
     "vite": "^5.4.9"
   }
